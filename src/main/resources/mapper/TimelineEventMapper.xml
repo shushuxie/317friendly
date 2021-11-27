@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="club.friend.common.dao.TimelineEventMapper" >
+  <resultMap id="BaseResultMap" type="club.friend.common.pojo.TimelineEvent" >
+    <id column="ID" property="id" jdbcType="VARCHAR" />
+    <result column="DATE_ID" property="dateId" jdbcType="VARCHAR" />
+    <result column="EVENT_TITLE" property="eventTitle" jdbcType="VARCHAR" />
+    <result column="EVENT_PICTURE" property="eventPicture" jdbcType="VARCHAR" />
+    <result column="EVENT_DESCRIBLE" property="eventDescrible" jdbcType="VARCHAR" />
+    <result column="EDITABLE" property="editable" jdbcType="VARCHAR" />
+    <result column="ADDNEWABLE" property="addnewable" jdbcType="VARCHAR" />
+    <result column="CREATETIME" property="createtime" jdbcType="VARCHAR" />
+    <result column="UPDATETIME" property="updatetime" jdbcType="VARCHAR" />
+    <result column="CREATOR" property="creator" jdbcType="VARCHAR" />
+
+  </resultMap >
+    <insert id="addEvent" >
+      insert into timeline_event (ID,DATE_ID,EVENT_TITLE,EVENT_PICTURE,EVENT_DESCRIBLE,EDITABLE,
+      ADDNEWABLE,CREATETIME,UPDATETIME,CREATOR )
+      values(#{id},#{dateId},#{eventTitle},#{eventPicture},#{eventDescrible},#{editable},
+      #{addnewable},#{createtime},#{updatetime},#{creator});
+    </insert>
+
+<!--  得到时间轴数据-->
+  <select id="getTimeLineData" resultType="TimelineEvent">
+    select ID,DATE_ID,EVENT_TITLE,EVENT_PICTURE,EVENT_DESCRIBLE,EDITABLE,
+      ADDNEWABLE from timeline_event order by DATE_ID,ID;
+  </select>
+</mapper>
