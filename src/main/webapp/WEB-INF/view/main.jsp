@@ -2,6 +2,7 @@
 <%pageContext.setAttribute("path", request.getContextPath());%>
 <!DOCTYPE html>
 <html>
+<%@ include file="commenHead.jsp" %>
 <head>
     <meta charset="utf-8">
     <title>首页</title>
@@ -20,63 +21,40 @@
     <h1>我的第一个 Bootstrap 页面</h1>
     <p>重置浏览器窗口大小查看效果！</p>
 </div>--%>
-<div id="myCarousel" class="carousel slide">
-    <!-- 轮播（Carousel）指标 -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-    <!-- 轮播（Carousel）项目 -->
-    <div class="carousel-inner">
-        <div class="item active" >
-            <img style="width:100%;height:450px;" src="${path }/static/img/lunboaa.jpg" alt="First slide">
-        </div>
-        <div class="item">
-            <img style="width:100%;height:450px;" src="${path }/static/img/lunbo6.jpg" alt="Second slide">
-        </div>
-        <div class="item">
-            <img style="width:100%;height:450px;" src="${path }/static/img/slide3.png" alt="Third slide">
-        </div>
-        <div class="item " >
-            <img style="width:100%;height:450px;" src="${path }/static/img/lunboaa.jpg" alt="Forth slide">
-        </div>
-    </div>
-    <!-- 轮播（Carousel）导航 -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">网站名</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">首页</a></li>
-                <li><a href="${path }/user/member">成员介绍</a></li>
-                <li><a href="${path }/resource/show">资源链接</a></li>
-<%--                <li><a href="${path }/user/timeLine">时间轴</a></li>--%>
-<%--                <li><a href="${path }/user/timeLine2">时间轴2</a></li>--%>
-                <li><a href="${path }/user/autoTimeline">可编辑时间轴</a></li>
-                <li><input type="button" id="autoTimeLine" value="自动生成时间轴"></li>
+<%--<div id="myCarousel" class="carousel slide" style="width:500px;height: 300px ">--%>
+<%--    <!-- 轮播（Carousel）指标 -->--%>
+<%--    <ol class="carousel-indicators">--%>
+<%--        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>--%>
+<%--        <li data-target="#myCarousel" data-slide-to="1"></li>--%>
+<%--        <li data-target="#myCarousel" data-slide-to="2"></li>--%>
+<%--        <li data-target="#myCarousel" data-slide-to="3"></li>--%>
+<%--    </ol>--%>
+<%--    <!-- 轮播（Carousel）项目 -->--%>
+<%--    <div class="carousel-inner">--%>
+<%--        <div class="item active" >--%>
+<%--            <img style="width:100%;height:450px;" src="${path }/static/img/lunboaa.jpg" alt="First slide">--%>
+<%--        </div>--%>
+<%--        <div class="item">--%>
+<%--            <img style="width:100%;height:450px;" src="${path }/static/img/lunbo6.jpg" alt="Second slide">--%>
+<%--        </div>--%>
+<%--        <div class="item">--%>
+<%--            <img style="width:100%;height:450px;" src="${path }/static/img/slide3.png" alt="Third slide">--%>
+<%--        </div>--%>
+<%--        <div class="item " >--%>
+<%--            <img style="width:100%;height:450px;" src="${path }/static/img/lunboaa.jpg" alt="Forth slide">--%>
+<%--        </div>--%>
+<%--    </div>--%>
+<%--    <!-- 轮播（Carousel）导航 -->--%>
+<%--    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">--%>
+<%--        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>--%>
+<%--        <span class="sr-only">Previous</span>--%>
+<%--    </a>--%>
+<%--    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">--%>
+<%--        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>--%>
+<%--        <span class="sr-only">Next</span>--%>
+<%--    </a>--%>
+<%--</div>--%>
 
-            </ul>
-        </div>
-    </div>
-</nav>
 
 <div class="container">
     <div class="row">
@@ -128,7 +106,7 @@
     }
 </style>
 </body>
-<input type="text" id="path" value="${path}">
+<input type="hidden" id="path" value="${path}">
 <script type="text/javascript" src="${path}/static/js/club/friend/main.js"></script>
 
 </html>

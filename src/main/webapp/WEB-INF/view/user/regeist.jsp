@@ -11,6 +11,7 @@
 %>
 <%--${pageContext.request.contextPath}绝对路径--%>
 <html>
+<%@ include file="../commenHead.jsp" %>
 <head>
     <meta charset="utf-8">
     <title>登录</title>

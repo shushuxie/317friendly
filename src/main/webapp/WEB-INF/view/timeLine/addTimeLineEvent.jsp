@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%pageContext.setAttribute("path", request.getContextPath());%>
 <html>
+<%@ include file="../commenHead.jsp" %>
 <head>
     <title>新增事件</title>
     <link rel="stylesheet" href="${path}/static/bootstrap/css/bootstrap.css">

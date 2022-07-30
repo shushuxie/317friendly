@@ -1,6 +1,6 @@
 package club.friend.common.utils;/**
  * TODO
- *
+ *自动生成代码
  * @author 谢树树
  * @date 14/11/2021 下午11:30
  */

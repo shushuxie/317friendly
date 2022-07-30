@@ -9,6 +9,7 @@
 <%pageContext.setAttribute("path", request.getContextPath());%>
 <!DOCTYPE html>
 <html lang="zh">
+<%@ include file="../commenHead.jsp" %>
 <head>
     <meta charset="UTF-8">
    <%-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">

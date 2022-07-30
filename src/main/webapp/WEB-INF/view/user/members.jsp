@@ -12,6 +12,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <%@ include file="../commenHead.jsp" %>
     <meta charset="UTF-8">
     <title>成员</title>
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">

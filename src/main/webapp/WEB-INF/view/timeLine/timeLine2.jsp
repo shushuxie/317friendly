@@ -9,6 +9,7 @@
 <%pageContext.setAttribute("path", request.getContextPath());%>
 <!DOCTYPE html>
 <html>
+<%@ include file="../commenHead.jsp" %>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">

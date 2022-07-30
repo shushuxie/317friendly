@@ -62,7 +62,7 @@ public class TimeLineEventController {
         timelineEvent.setCreator("admin");
         timelineEvent.setId(Commonutil.genertorRandowStr());
         timelineEvent.setDateId(Commonutil.getPresentDate1());
-        eventService.addTimeLineEvent(timelineEvent);
+        eventService.addTimeLineEvent(timelineEvent);// TODO 测试
 
         return "timeLine/autotimeline";
     }

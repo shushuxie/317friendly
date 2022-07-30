@@ -1,7 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%pageContext.setAttribute("path", request.getContextPath());%>
+
 <!DOCTYPE html>
 <html lang="zh">
+<%@ include file="../commenHead.jsp" %>
 <head>
     <meta charset="UTF-8">
     <title>可编辑时间轴</title>

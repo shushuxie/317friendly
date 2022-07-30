@@ -47,24 +47,5 @@
 <!--        配置优先级-->
         <property name="order" value="1"></property>
     </bean>
-<!--    html视图解析器-->
-<!--    <bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
-        <property name="templateLoaderPath" value="/WEB-INF/view/"/>&lt;!&ndash; HTML文件位置 &ndash;&gt;
-        <property name="defaultEncoding" value="utf-8"/>
-        <property name="freemarkerSettings">
-            <props>
-                <prop key="locale">zh_CN</prop>
-                <prop key="datetime_format">yyyy-MM-dd HH:mm:ss</prop>
-                <prop key="date_format">yyyy-MM-dd</prop>
-                <prop key="default_encoding">UTF-8</prop>
-                &lt;!&ndash;<prop key="number_format">#.##</prop>&ndash;&gt;
-            </props>
-        </property>
-    </bean>
-    <bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerViewResolver">
-        <property name="viewClass" value="org.springframework.web.servlet.view.freemarker.FreeMarkerView"/>
-        <property name="suffix" value=".html"/>
-        <property name="order" value="0"/>&lt;!&ndash; 优先找HTML &ndash;&gt;
-        <property name="contentType" value="text/html;charset=UTF-8"/>&lt;!&ndash; 解决网页中文乱码的问题 &ndash;&gt;
-    </bean>-->
+
 </beans>
